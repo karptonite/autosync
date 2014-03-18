@@ -1,0 +1,3 @@
+result=$(rsync -e 'ssh' -avz --exclude '.DS_Store' --exclude '.FBCLockFolder' --exclude 'templates_c/' --exclude 'css/compiled/' --exclude '*.git' --exclude '*.out' --exclude '*.mlog' --delete $1 $2)
+echo $result
+terminal-notifier -message "$result"
