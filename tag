@@ -42,6 +42,4 @@ ctags -h \".php\" -R \
 --totals=yes \
 --tag-relative=yes \
 --PHP-kinds=cfi \
---regex-PHP='/(abstract)?\s+class\s+([^ ]+)/\2/c/' \
---regex-PHP='/(static|abstract|public|protected|private)\s+(final\s+)?function\s+(\&\s+)?([^ (]+)/\4/f/' \
 --regex-PHP='/interface\s+([^ ]+)/\1/i/'
