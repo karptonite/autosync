@@ -34,7 +34,6 @@ ctags -h \".php\" -R \
 --exclude=CssMin.php \
 --exclude=JsMin.php \
 --exclude=vendor \
---exclude=contest/* \
 --exclude=audio-player* \
 --exclude=EbatNs \
 --exclude=*.phar \
