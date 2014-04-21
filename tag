@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /Users/karp/Documents/git/bgg
 ctags -h \".php\" -R \
+--fields=+l \
 --exclude=\.git \
 --exclude=js/vendor \
 --exclude=js/date.js \
