@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /Users/karp/Documents/git/bgg
+# cd /Users/karp/Documents/git/bgg
 ctags -h \".php\" -R \
 --fields=+l \
 --exclude=\.git \
@@ -34,8 +34,13 @@ ctags -h \".php\" -R \
 --exclude=phpVimeo.php \
 --exclude=CssMin.php \
 --exclude=JsMin.php \
---exclude=vendor \
 --exclude=audio-player* \
+--exclude=vendor/recaptcha \
+--exclude=vendor/simplepie \
+--exclude=vendor/mailchimp \
+--exclude=vendor/smarty \
+--exclude=vendor/aws \
+--exclude=vendor/behat \
 --exclude=EbatNs \
 --exclude=*.phar \
 --exclude=*.min.* \
