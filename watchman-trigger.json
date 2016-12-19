@@ -1,0 +1,8 @@
+["trigger", "/Users/karp/Documents/git/bgg", {
+	"name": "syncbgg",
+	"command": [
+		"/Users/karp/scripts/rsyncnotify",
+		"/Users/karp/Documents/git/bgg/",
+		"karp@dev.geekdo.com:/var/www/karp/"
+	]
+}]
