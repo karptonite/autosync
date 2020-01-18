@@ -1,5 +1,5 @@
 ["trigger", "/Users/karp/Documents/git/bgg", {
-	"name": "syncbgg",
+	"name": "devsyncbgg",
 	"command": [
 		"/Users/karp/scripts/rsyncnotify",
 		"/Users/karp/Documents/git/bgg/",

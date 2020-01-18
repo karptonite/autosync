@@ -1,3 +1,3 @@
-result=$(rsync -e 'ssh' -avzi --exclude 'tags' --exclude '.idea/' --exclude '.svn/' --exclude 'documentation/' --exclude '.DS_Store' --exclude '.FBCLockFolder' --exclude 'templates_c/' --exclude 'css/compiled/' --exclude 'app/compiled/smarty/' --exclude '*.git' --exclude '*.out' --exclude '*.mlog' --delete $1 $2 | grep -v '\(f\|d\)\.\.t\(\.\|p\)\.\.\.\|L\.\.\(T\|t\)\.\.\.\.' | grep -v 'app/cache/clockwork')
+result=$(rsync -e 'ssh' -avzi --exclude 'tags' --exclude '.idea/' --exclude '.svn/' --exclude 'node_modules/' --exclude 'documentation/' --exclude '.DS_Store' --exclude '.FBCLockFolder' --exclude 'templates_c/' --exclude 'css/compiled/' --exclude 'app/compiled/smarty/' --exclude '*.git' --exclude '*.out' --exclude '*.mlog' --delete $1 $2 | grep -v '\(f\|d\)\.\.t\(\.\|p\)\.\.\.\|L\.\.\(T\|t\)\.\.\.\.' | grep -v 'app/cache/clockwork')
 echo "$result"
 terminal-notifier -message "$result"
