@@ -1,0 +1,3 @@
+result=$(rsync -e 'ssh' -avzi --progress --stats --exclude 'tags' --exclude '.idea/' --exclude 'node_modules/' --exclude '.svn/' --exclude 'documentation/' --exclude '.DS_Store' --exclude '.FBCLockFolder' --exclude 'templates_c/' --exclude 'css/compiled/' --exclude 'app/compiled/smarty/' --exclude '*.git' --exclude '*.out' --exclude '*.mlog' --delete $1 $2 )
+echo "$result"
+terminal-notifier -message "$result"
