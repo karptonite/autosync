@@ -1,8 +1,0 @@
-["trigger", "/Users/karp/Documents/git/bgg", {
-	"name": "syncbgg",
-	"command": [
-		"/Users/karp/scripts/rsyncnotify",
-		"/Users/karp/Documents/git/bgg/",
-		"karp@35.239.16.65:/var/www/karp/"
-	]
-}]

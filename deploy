@@ -1,0 +1,7 @@
+#!/bin/bash -x
+#
+set -x
+set -e #stops execution if a variable is not set
+set -u #stop execution if something goes wrong
+
+ssh -t karp@dev.geekdo.com "sudo su -c \"cd /var/www/deployscripts; ./build_and_deploy.sh\" deploy"
