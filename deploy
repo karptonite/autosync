@@ -1,6 +1,5 @@
 #!/bin/bash -x
 #
-set -x
 set -e #stops execution if a variable is not set
 set -u #stop execution if something goes wrong
 
